@@ -58,18 +58,26 @@ To work on this project and run it on your computer, you'll need a few things. H
 
 ---
 
-## How to Run the App on Your Computer
+## How to Run the App on Your Computer (Full Stack)
 
-The code I've written so far is for the **Frontend** (the part you see). Here's how you can run it:
+Now that we have both a frontend and a backend, running the app on your computer requires two steps. Think of it like starting the engine (the backend) and then turning on the dashboard (the frontend). You'll need two separate terminals for this.
 
-1.  **Open the project in your code editor** (like VS Code).
-2.  **Open the terminal** inside your code editor.
-3.  **Install the building blocks:**
-    *   Run the command: `npm install`
-    *   This command reads a file called `package.json` and downloads all the free code "packages" (dependencies) that our project needs to work. It's like getting all your LEGOs ready before you start building.
-4.  **Start the app:**
-    *   Run the command: `npm start`
-    *   This will start a local development server and automatically open the app in your web browser. You'll see the login and registration forms I created. Any changes you make to the code will show up live in the browser!
+### 1. Before you start: Install all dependencies
+First, make sure you have all the code "packages" for both the frontend and backend.
+*   In your main terminal, run: `npm install` (this installs the frontend packages).
+*   Then, navigate into the api folder and do the same: `cd api && npm install` (this installs the backend packages).
+
+### 2. Start the Backend Server (The Brains)
+*   In your first terminal, navigate to the `api` directory.
+*   Run the command: `func start`
+*   This will start up all our "helper robots" (the Azure Functions). You should see a list of available API endpoints, like `http://localhost:7071/api/login`. Keep this terminal running.
+
+### 3. Start the Frontend Server (The Part You See)
+*   Open a **second, new terminal**.
+*   In this new terminal (which should be at the project root), run the command: `npm start`
+*   This will start the React development server and automatically open the app in your web browser at `http://localhost:3000`.
+
+Now, when you use the web app, the frontend will automatically "proxy" its API calls to your running backend server. Everything should be fully connected and working!
 
 ---
 
