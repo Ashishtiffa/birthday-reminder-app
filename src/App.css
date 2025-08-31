@@ -36,3 +36,131 @@
     transform: rotate(360deg);
   }
 }
+
+/* Styles for the Birthday Page */
+.birthday-page {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.birthday-page .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.logout-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+.birthday-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.birthday-item {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles for the Add Birthday Form */
+.add-birthday-form {
+  background-color: #3e4451;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.add-birthday-form h3 {
+  margin-top: 0;
+}
+
+.add-birthday-form .form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.add-birthday-form input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-birthday-form button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffc107;
+  color: #212529;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.edit-birthday-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.edit-birthday-form input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit-birthday-form button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-birthday-form button[type="button"] {
+  background-color: #6c757d;
+}

@@ -28,9 +28,11 @@ The Birthday Reminder Web App is a personal-use application designed to help the
 1. **Birthday Management** – Add, edit, and delete birthdays manually.  
 2. **Custom Reminders** – Configure notifications (same day, 1 day before, 1 week before).  
 3. **Upcoming Birthday List** – Show birthdays in a list view.  
+4. **Snooze Reminder** – Ability to delay a birthday reminder for a default period (e.g., 24 hours).
 
 ### 3.2 Authentication  
-- Basic **username + password login** to secure access.  
+1. **User Registration** – Allow a new user to create an account with a username and password.
+2. **User Login** – Basic **username + password login** to secure access.
 
 ---
 
