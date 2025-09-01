@@ -58,6 +58,18 @@ To work on this project and run it on your computer, you'll need a few things. H
 
 ---
 
+## Important: Setting Up Your Local Secrets (`local.settings.json`)
+
+Before you can run the backend server, you need to provide it with all the necessary secret keys and connection strings. I have created a file for you at `api/local.settings.json`.
+
+You **must** open this file and fill in the placeholder values (e.g., `"YOUR_COSMOS_DB_ENDPOINT_HERE"`) with your actual secrets from your Azure and Brevo accounts.
+
+One special setting is `AzureWebJobsStorage`. I have set it to `UseDevelopmentStorage=true`, which allows you to run the backend locally without needing a real Azure Storage account. You can leave this as is.
+
+This `local.settings.json` file is for your computer only and is ignored by git, so your secrets will not be uploaded.
+
+---
+
 ## How to Run the App on Your Computer (Full Stack)
 
 Now that we have both a frontend and a backend, running the app on your computer requires two steps. Think of it like starting the engine (the backend) and then turning on the dashboard (the frontend). You'll need two separate terminals for this.
